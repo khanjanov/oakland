@@ -1,0 +1,35 @@
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin d_flex_sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin d_flex_sb_fdc {
+  @include d_flex_sb;
+  flex-direction: column;
+}
+@mixin center {
+  width: 1250px;
+  margin: 0 auto;
+}
+@mixin background_image($background-image: url(@content)) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+@mixin button($bgc) {
+  background-color: $bgc;
+  padding: 20px 48px;
+  cursor: pointer;
+}
+@mixin buttons_a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}

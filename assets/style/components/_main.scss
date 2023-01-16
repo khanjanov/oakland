@@ -1,0 +1,139 @@
+#main {
+  .section1 {
+    .container {
+      width: 100%;
+      padding: 188px 0;
+      .wrapper {
+        width: 100%;
+        @include d_flex_sb_fdc;
+        gap: 40px;
+        h1 {
+          font-size: 64px;
+          font-weight: 900;
+          text-align: center;
+          color: $color2;
+        }
+        &__button {
+          @include button($color1);
+          &:hover {
+            background-color: rgb(54, 54, 54);
+          }
+          a {
+            @include buttons_a;
+          }
+        }
+      }
+    }
+  }
+  .section2 {
+    @include background_image($backgroun-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/oakland9e4y2/alex-suprun-N60_1zpWNtU-unsplash.jpg));
+  }
+  .section3 {
+    .container {
+      width: 100%;
+      padding: 132px 0;
+      .wrapper {
+        width: 100%;
+        @include d_flex_sb_fdc;
+        gap: 60px;
+        h2 {
+          font-size: 48px;
+          font-weight: $fw5;
+          color: $color2;
+        }
+        p {
+          font-size: 18px;
+          font-weight: $fw5;
+          text-align: center;
+          line-height: 1.7;
+        }
+        div {
+          align-items: center;
+        }
+      }
+    }
+  }
+  .section4 {
+    .container {
+      width: 100%;
+      background-color: $color2;
+      padding: 132px 0;
+      .wrapper {
+        width: 100%;
+        @include d_flex_sb_fdc;
+        &__options {
+          @include d_flex_sb_fdc;
+          gap: 56px;
+          a {
+            font-size: 56px;
+            font-weight: $fw6;
+            color: $color3;
+          }
+        }
+      }
+    }
+  }
+  .section5 {
+    @include background_image($background-image: url(https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,fit=crop/oakland9e4y2/alex-suprun-AHnhdjyTNGM-unsplash.jpg)
+    );
+  }
+  .section6 {
+    .container {
+      width: 100%;
+      padding: 116px;
+      @include d_flex_sb;
+      .wrapper {
+        width: 100%;
+        @include d_flex_sb_fdc;
+        gap: 76px;
+        h2 {
+          font-size: 48px;
+          font-weight: $fw5;
+          color: $color2;
+        }
+        p {
+          font-size: 18px;
+          font-weight: $fw5;
+          text-align: center;
+          line-height: 1.7;
+        }
+        &__examples {
+          @include d_flex_sb;
+          gap: 20px;
+        }
+        &__button {
+          @include button($color1);
+          &:hover {
+            background-color: rgb(54, 54, 54);
+          }
+          a {
+            @include buttons_a;
+          }
+        }
+      }
+    }
+  }
+  .section7 {
+    .container {
+      width: 100%;
+      background-color: $colro2;
+      padding: 160px 0;
+      .wrapper {
+        width: 100%;
+        @include d_flex_sb_fdc;
+        &__clientfeedback {
+          color: $color3;
+          &__quote {
+            font-size: 56px;
+            font-weight: $fw6;
+            padding-bottom: 40px;
+          }
+          &__client {
+            font-size: 16px;
+            font-weight: $fw5;
+          }
+        }
+      }
+    }
+  }
+}

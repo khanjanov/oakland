@@ -1,0 +1,43 @@
+#header {
+  .container {
+    width: 100%;
+    padding: 28px 0;
+    position: fixed;
+    background-color: $color3;
+    .wrapper {
+      width: 100%;
+      @include d_flex_sb;
+      padding: 0 64px;
+      .burgerm {
+        display: none;
+      }
+      .navs {
+        @include d_flex_sb;
+        gap: 24px;
+        font-size: 16px;
+        font-weight: $fw5;
+        div {
+          a {
+            color: $color1;
+            font-weight: 700;
+          }
+          &:first-child {
+            a {
+              border-bottom: 1px solid $color1;
+              padding-bottom: 4px;
+            }
+          }
+          &:nth-child(2),
+          &:last-child {
+            a {
+              &:hover {
+                border-bottom: 1px solid $color1;
+                padding-bottom: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

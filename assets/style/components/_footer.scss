@@ -1,0 +1,30 @@
+#footer {
+  .container {
+    width: 100%;
+    background-color: $color1;
+    padding: 116px 0;
+    .wrapper {
+      width: 100%;
+      @include d_flex_sb_fdc;
+      gap: 88px;
+      color: $color3;
+      h1 {
+        font-size: 48px;
+        font-weight: $fw6;
+      }
+      &__button {
+        @include button($color2);
+        &:hover {
+          background-color: #e24845;
+        }
+        a {
+          @include buttons_a;
+        }
+      }
+      &__socials {
+        @include d_flex_sb;
+        gap: 120px;
+      }
+    }
+  }
+}
